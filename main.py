@@ -91,24 +91,24 @@ option = st.selectbox(
      'Pick your container',
      ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10'))
 
-if (option == '1')
+if option == '1':
   st.write(df1)
-elif option == '2'
+elif option == '2':
   st.write(df2)
-elif option == '3'
+elif option == '3':
   st.write(df3)
-elif option == '4'
+elif option == '4':
   st.write(df4)
-elif option == '5'
+elif option == '5':
   st.write(df5)
-elif option == '6'
+elif option == '6':
   st.write(df6)
-elif option == '7'
+elif option == '7':
   st.write(df7)
-elif option == '8'
+elif option == '8':
   st.write(df8)
-elif option == '9'
+elif option == '9':
   st.write(df9)
-elif option == '10'
+elif option == '10':
   st.write(df10)
 
