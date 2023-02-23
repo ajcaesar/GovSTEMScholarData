@@ -50,7 +50,6 @@ while i < 10:
   g = df.iloc[6, 4*i + 4]
   h = df.iloc[7, 4*i + 4]
   i = df.iloc[8, 4*i + 4]
-  j = df.iloc[9, 4*i + 4]
   df1.at[i, "Nitrite"] = a.split('/')[0]
   df2.at[i, "Nitrite"] = b.split('/')[0]
   df3.at[i, "Nitrite"] = c.split('/')[0]
