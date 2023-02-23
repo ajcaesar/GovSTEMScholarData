@@ -50,9 +50,7 @@ while i < 10:
   g = df.iloc[6, 4*i + 4]
   h = df.iloc[7, 4*i + 4]
   ij = df.iloc[8, 4*i + 4]
-  st.write(i)
-  st.write(a)
-  st.write(type(a))
+  k = df.iloc[9, 4*i + 4]
   if (i%2 == 1):
     df1.at[i, "Nitrite"] = a.split('/')[0]
     df2.at[i, "Nitrite"] = b.split('/')[0]
@@ -63,6 +61,17 @@ while i < 10:
     df7.at[i, "Nitrite"] = g.split('/')[0]
     df8.at[i, "Nitrite"] = h.split('/')[0]
     df9.at[i, "Nitrite"] = ij.split('/')[0]
+    df10.at[i, "Nitrite"] = k.split('/')[0]
+    df1.at[i, "Nitrate"] = a.split('/')[1]
+    df2.at[i, "Nitrate"] = b.split('/')[1]
+    df3.at[i, "Nitrate"] = c.split('/')[1]
+    df4.at[i, "Nitrate"] = d.split('/')[1]
+    df5.at[i, "Nitrate"] = e.split('/')[1]
+    df6.at[i, "Nitrate"] = f.split('/')[1]
+    df7.at[i, "Nitrate"] = g.split('/')[1]
+    df8.at[i, "Nitrate"] = h.split('/')[1]
+    df9.at[i, "Nitrate"] = ij.split('/')[1]
+    df10.at[i, "Nitrate"] = k.split('/')[1]
   #add in Week data 
   df9.at[i, "Week"] = i + 1
   df1.at[i, "Week"] = i + 1
