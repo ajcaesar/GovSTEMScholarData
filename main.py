@@ -72,6 +72,8 @@ while i < 10:
     if (i != 7):
       df10.at[i, "Nitrite"] = float(k.split('/')[0])
       df10.at[i, "Nitrate"] = float(k.split('/')[1])
+  else
+    
       
   #add in Week data 
   df9.at[i, "Week"] = int(i + 1)
