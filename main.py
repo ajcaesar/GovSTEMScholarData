@@ -93,7 +93,7 @@ option = st.selectbox(
 
 if option == '1':
   st.write(df1)
-  st.linechart
+  st.line_chart(df1['Nitrite'])
 elif option == '2':
   st.write(df2)
 elif option == '3':
