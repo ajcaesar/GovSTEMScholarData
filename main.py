@@ -17,7 +17,7 @@ df10 = pd.DataFrame(columns = ["Week", "pH", "Nitrate", "Nitrite"])
 st.write(df)
 
 i = 0; 
-for i < 10:
+while i < 10:
   df1.at[i]["pH"] = df.iloc[1, 4*i + 3]
   df2.at[i]["pH"] = df.iloc[2, 4*i + 3]
   df3.at[i]["pH"] = df.iloc[3, 4*i + 3]
