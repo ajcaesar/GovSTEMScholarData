@@ -74,16 +74,16 @@ while i < 10:
       df10.at[i, "Nitrate"] = float(k.split('/')[1])
    
   #add in water data 
-  l = df.iloc[0, 5*i + 4]
-  m = df.iloc[1, 5*i + 4]
-  n = df.iloc[2, 5*i + 4]
-  o = df.iloc[3, 5*i + 4]
-  p = df.iloc[4, 5*i + 4]
-  q = df.iloc[5, 5*i + 4]
-  r = df.iloc[6, 5*i + 4]
-  s = df.iloc[7, 5*i + 4]
-  t = df.iloc[8, 5*i + 4]
-  u = df.iloc[9, 5*i + 4]
+  l = df.iloc[0, 4*i + 5]
+  m = df.iloc[1, 4*i + 5]
+  n = df.iloc[2, 4*i + 5]
+  o = df.iloc[3, 4*i + 5]
+  p = df.iloc[4, 4*i + 5]
+  q = df.iloc[5, 4*i + 5]
+  r = df.iloc[6, 4*i + 5]
+  s = df.iloc[7, 4*i + 5]
+  t = df.iloc[8, 4*i + 5]
+  u = df.iloc[9, 4*i + 5]
 
   if ("m" in l):
     df1.at[i, "Water Added"] = float(l.split('m')[0])
@@ -96,7 +96,7 @@ while i < 10:
 
   if ("m" in o):
     df4.at[i, "Water Added"] = float(o.split('m')[0])
-  st.write(p)
+
   if ("m" in p):
     df5.at[i, "Water Added"] = float(p.split('m')[0])
 
