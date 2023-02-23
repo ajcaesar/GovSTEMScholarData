@@ -112,10 +112,10 @@ while i < 10:
     df7.at[i, "Water Added"] = float(r.split(' ')[0])
   elif ("m" in r):
     df7.at[i, "Water Added"] = float(r.split('m')[0])
-  if (" " in s):
-    df8.at[i, "Water Added"] = float(s.split(' ')[0])
-  elif ("m" in s):
-    df8.at[i, "Water Added"] = float(s.split('m')[0])
+  #if (" " in s):
+  #  df8.at[i, "Water Added"] = float(s.split(' ')[0])
+#  elif ("m" in s):
+#    df8.at[i, "Water Added"] = float(s.split('m')[0])
   if (" " in t):
     df9.at[i, "Water Added"] = float(t.split(' ')[0])
   elif ("m" in t):
