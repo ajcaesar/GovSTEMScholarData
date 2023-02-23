@@ -63,6 +63,17 @@ while i < 10:
       df10.at[i, "Nitrate"] = float(k.split('/')[1])
    
   #add in water data 
+  df1.at[i, "Water Added"] = 0.0
+  df2.at[i, "Water Added"] = 0.0
+  df3.at[i, "Water Added"] = 0.0
+  df4.at[i, "Water Added"] = 0.0
+  df5.at[i, "Water Added"] = 0.0
+  df6.at[i, "Water Added"] = 0.0
+  df7.at[i, "Water Added"] = 0.0
+  df8.at[i, "Water Added"] = 0.0
+  df9.at[i, "Water Added"] = 0.0
+  df10.at[i, "Water Added"] = 0.0
+  
   l = df.iloc[0, 4*i + 5]
   m = df.iloc[1, 4*i + 5]
   n = df.iloc[2, 4*i + 5]
