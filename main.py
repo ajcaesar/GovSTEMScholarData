@@ -61,7 +61,6 @@ while i < 10:
     df7.at[i, "Nitrite"] = g.split('/')[0]
     df8.at[i, "Nitrite"] = h.split('/')[0]
     df9.at[i, "Nitrite"] = ij.split('/')[0]
-    df10.at[i, "Nitrite"] = k.split('/')[0]
     df1.at[i, "Nitrate"] = a.split('/')[1]
     df2.at[i, "Nitrate"] = b.split('/')[1]
     df3.at[i, "Nitrate"] = c.split('/')[1]
