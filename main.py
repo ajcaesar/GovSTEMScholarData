@@ -94,22 +94,41 @@ option = st.selectbox(
 if option == '1':
   st.write(df1)
   st.line_chart(df1['Nitrite'])
+  st.line_chart(df1['Nitrate'])
 elif option == '2':
   st.write(df2)
+  st.line_chart(df2['Nitrite'])
+  st.line_chart(df2['Nitrate'])
 elif option == '3':
   st.write(df3)
+  st.line_chart(df3['Nitrite'])
+  st.line_chart(df3['Nitrate'])
 elif option == '4':
   st.write(df4)
+  st.line_chart(df4['Nitrite'])
+  st.line_chart(df4['Nitrate'])
 elif option == '5':
   st.write(df5)
+  st.line_chart(df5['Nitrite'])
+  st.line_chart(df5['Nitrate'])
 elif option == '6':
   st.write(df6)
+  st.line_chart(df6['Nitrite'])
+  st.line_chart(df6['Nitrate'])
 elif option == '7':
   st.write(df7)
+  st.line_chart(df7['Nitrite'])
+  st.line_chart(df7['Nitrate'])
 elif option == '8':
   st.write(df8)
+  st.line_chart(df8['Nitrite'])
+  st.line_chart(df8['Nitrate'])
 elif option == '9':
   st.write(df9)
+  st.line_chart(df9['Nitrite'])
+  st.line_chart(df9['Nitrate'])
 elif option == '10':
   st.write(df10)
+  st.line_chart(df10['Nitrite'])
+  st.line_chart(df10['Nitrate'])
 
