@@ -59,7 +59,6 @@ while i < 10:
   df7.at[i, "Nitrite"] = g.split('/')[0]
   df8.at[i, "Nitrite"] = h.split('/')[0]
   df9.at[i, "Nitrite"] = i.split('/')[0]
-  df10.at[i, "Nitrite"] = j.split('/')[0]
   #add in Week data 
   df9.at[i, "Week"] = i + 1
   df1.at[i, "Week"] = i + 1
