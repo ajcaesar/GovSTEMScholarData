@@ -84,45 +84,35 @@ while i < 10:
   s = df.iloc[7, 5*i + 4]
   t = df.iloc[8, 5*i + 4]
   u = df.iloc[9, 5*i + 4]
-  if " " in l:
-    df1.at[i, "Water Added"] = float(l.split(' ')[0])
-  elif ("m" in l):
+
+  if ("m" in l):
     df1.at[i, "Water Added"] = float(l.split('m')[0])
-  if (" " in m):
-    df2.at[i, "Water Added"] = float(m.split(' ')[0])
-  elif ("m" in m):
+
+  if ("m" in m):
     df2.at[i, "Water Added"] = float(m.split('m')[0])
-  if (" " in n):
-    df3.at[i, "Water Added"] = float(n.split(' ')[0])
-  elif ("m" in n):
+
+  if ("m" in n):
     df3.at[i, "Water Added"] = float(n.split('m')[0])
-  if (" " in o):
-    df4.at[i, "Water Added"] = float(o.split(' ')[0])
-  elif ("m" in o):
+
+  if ("m" in o):
     df4.at[i, "Water Added"] = float(o.split('m')[0])
-#  if (" " in p):
-#    df5.at[i, "Water Added"] = float(p.split(' ')[0])
-#  elif ("m" in p):
-#    df5.at[i, "Water Added"] = float(p.split('m')[0])
-  if (" " in q):
-    df6.at[i, "Water Added"] = float(q.split(' ')[0])
-  elif ("m" in q):
+
+  if ("m" in p):
+    df5.at[i, "Water Added"] = float(p.split('m')[0])
+
+  if ("m" in q):
     df6.at[i, "Water Added"] = float(q.split('m')[0])
-  if (" " in r):
-    df7.at[i, "Water Added"] = float(r.split(' ')[0])
-  elif ("m" in r):
+    
+  if ("m" in r):
     df7.at[i, "Water Added"] = float(r.split('m')[0])
-  #if (" " in s):
-  #  df8.at[i, "Water Added"] = float(s.split(' ')[0])
-#  elif ("m" in s):
-#    df8.at[i, "Water Added"] = float(s.split('m')[0])
-  if (" " in t):
-    df9.at[i, "Water Added"] = float(t.split(' ')[0])
-  elif ("m" in t):
+
+  if ("m" in s):
+    df8.at[i, "Water Added"] = float(s.split('m')[0])
+
+  if ("m" in t):
     df9.at[i, "Water Added"] = float(t.split('m')[0])
-  if (" " in u):
-    df10.at[i, "Water Added"] = float(u.split(' ')[0])
-  elif ("m" in u):
+
+  if ("m" in u):
     df3.at[i, "Water Added"] = float(u.split('m')[0])
     
   #add in Week data 
