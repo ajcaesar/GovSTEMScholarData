@@ -84,7 +84,7 @@ while i < 10:
   s = df.iloc[7, 5*i + 4]
   t = df.iloc[8, 5*i + 4]
   u = df.iloc[9, 5*i + 4]
-  if (" " in l):
+  if " " in l:
     df1.at[i, "Water Added"] = float(l.split(' ')[0])
   elif ("m" in l):
     df1.at[i, "Water Added"] = float(l.split('m')[0])
