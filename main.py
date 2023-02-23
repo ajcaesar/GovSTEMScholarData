@@ -15,7 +15,6 @@ df8 = pd.DataFrame(columns = ["Week", "pH", "Nitrite", "Nitrate", "Water Added"]
 df9 = pd.DataFrame(columns = ["Week", "pH", "Nitrite", "Nitrate", "Water Added"])
 df10 = pd.DataFrame(columns = ["Week", "pH", "Nitrite", "Nitrate", "Water Added"])
 st.write(df)
-st.write(type(df.iloc[0, 4]))
 i = 0; 
 while i < 10:
   #add in pH data 
