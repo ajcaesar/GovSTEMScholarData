@@ -15,3 +15,9 @@ df8 = pd.DataFrame(columns = ["Week", "pH", "Nitrate", "Nitrite"])
 df9 = pd.DataFrame(columns = ["Week", "pH", "Nitrate", "Nitrite"])
 df10 = pd.DataFrame(columns = ["Week", "pH", "Nitrate", "Nitrite"])
 st.write(df)
+
+i = 0; 
+for i < 10:
+  df1.at[i]["pH"] = df.iloc[1, 4*i + 3]
+  i += 1
+st.write(df1)
