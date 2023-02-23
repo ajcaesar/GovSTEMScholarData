@@ -84,37 +84,37 @@ while i < 10:
   s = df.iloc[7, 4*i + 5]
   t = df.iloc[8, 4*i + 5]
   u = df.iloc[9, 4*i + 5]
-
-  if ("m" in l):
-    df1.at[i, "Water Added"] = float(l.split('m')[0])
-
-  if ("m" in m):
-    df2.at[i, "Water Added"] = float(m.split('m')[0])
-
-  if ("m" in n):
-    df3.at[i, "Water Added"] = float(n.split('m')[0])
-
-  if ("m" in o):
-    df4.at[i, "Water Added"] = float(o.split('m')[0])
-  st.write(p)
-  st.write(not pd.isnull(df.iloc[4, 4*i + 5]))
-  if ("m" in p):
+  
+  if not pd.isnull(df.iloc[0, 4*i + 5]):
+    if ("m" in l):
+      df1.at[i, "Water Added"] = float(l.split('m')[0])
+  if not pd.isnull(df.iloc[1, 4*i + 5]):
+    if ("m" in m):
+      df2.at[i, "Water Added"] = float(m.split('m')[0])
+  if not pd.isnull(df.iloc[2, 4*i + 5]):
+    if ("m" in n):
+      df3.at[i, "Water Added"] = float(n.split('m')[0])
+  if not pd.isnull(df.iloc[3, 4*i + 5]):
+    if ("m" in o):
+      df4.at[i, "Water Added"] = float(o.split('m')[0])
+  if not pd.isnull(df.iloc[4, 4*i + 5]):
+    if ("m" in p):
       df5.at[i, "Water Added"] = float(p.split('m')[0])
-
-  if ("m" in q):
-    df6.at[i, "Water Added"] = float(q.split('m')[0])
-    
-  if ("m" in r):
-    df7.at[i, "Water Added"] = float(r.split('m')[0])
-
-  if ("m" in s):
-    df8.at[i, "Water Added"] = float(s.split('m')[0])
-
-  if ("m" in t):
-    df9.at[i, "Water Added"] = float(t.split('m')[0])
-
-  if ("m" in u):
-    df3.at[i, "Water Added"] = float(u.split('m')[0])
+  if not pd.isnull(df.iloc[5, 4*i + 5]):
+    if ("m" in q):
+      df6.at[i, "Water Added"] = float(q.split('m')[0])
+  if not pd.isnull(df.iloc[6, 4*i + 5]):
+    if ("m" in r):
+      df7.at[i, "Water Added"] = float(r.split('m')[0])
+  if not pd.isnull(df.iloc[7, 4*i + 5]):
+    if ("m" in s):
+      df8.at[i, "Water Added"] = float(s.split('m')[0])
+  if not pd.isnull(df.iloc[8, 4*i + 5]):
+    if ("m" in t):
+      df9.at[i, "Water Added"] = float(t.split('m')[0])
+  if not pd.isnull(df.iloc[9, 4*i + 5]):
+    if ("m" in u):
+      df10.at[i, "Water Added"] = float(u.split('m')[0])
     
   #add in Week data 
   df9.at[i, "Week"] = int(i + 1)
