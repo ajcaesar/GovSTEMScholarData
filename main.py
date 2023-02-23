@@ -74,17 +74,17 @@ while i < 10:
       df10.at[i, "Nitrate"] = float(k.split('/')[1])
       
   #add in Week data 
-  df9.at[i, "Week"] = i + 1
-  df1.at[i, "Week"] = i + 1
-  df2.at[i, "Week"] = i + 1
-  df3.at[i, "Week"] = i + 1
-  df4.at[i, "Week"] = i + 1
-  df5.at[i, "Week"] = i + 1
-  df6.at[i, "Week"] = i + 1
-  df7.at[i, "Week"] = i + 1
-  df8.at[i, "Week"] = i + 1
-  df9.at[i, "Week"] = i + 1
-  df10.at[i, "Week"] = i + 1
+  df9.at[i, "Week"] = int(i + 1)
+  df1.at[i, "Week"] = int(i + 1)
+  df2.at[i, "Week"] = int(i + 1)
+  df3.at[i, "Week"] = int(i + 1)
+  df4.at[i, "Week"] = int(i + 1)
+  df5.at[i, "Week"] = int(i + 1)
+  df6.at[i, "Week"] = int(i + 1)
+  df7.at[i, "Week"] = int(i + 1)
+  df8.at[i, "Week"] = int(i + 1)
+  df9.at[i, "Week"] = int(i + 1)
+  df10.at[i, "Week"] = int(i + 1)
   i += 1
 
 option = st.selectbox(
@@ -95,40 +95,50 @@ if option == '1':
   st.write(df1)
   st.line_chart(df1['Nitrite'])
   st.line_chart(df1['Nitrate'])
+  st.line_chart(df1['Week'])
 elif option == '2':
   st.write(df2)
   st.line_chart(df2['Nitrite'])
   st.line_chart(df2['Nitrate'])
+  st.line_chart(df2['Week'])
 elif option == '3':
   st.write(df3)
   st.line_chart(df3['Nitrite'])
   st.line_chart(df3['Nitrate'])
+  st.line_chart(df3['Week'])
 elif option == '4':
   st.write(df4)
   st.line_chart(df4['Nitrite'])
   st.line_chart(df4['Nitrate'])
+  st.line_chart(df4['Week'])
 elif option == '5':
   st.write(df5)
   st.line_chart(df5['Nitrite'])
   st.line_chart(df5['Nitrate'])
+  st.line_chart(df5['Week'])
 elif option == '6':
   st.write(df6)
   st.line_chart(df6['Nitrite'])
   st.line_chart(df6['Nitrate'])
+  st.line_chart(df6['Week'])
 elif option == '7':
   st.write(df7)
   st.line_chart(df7['Nitrite'])
   st.line_chart(df7['Nitrate'])
+  st.line_chart(df7['Week'])
 elif option == '8':
   st.write(df8)
   st.line_chart(df8['Nitrite'])
   st.line_chart(df8['Nitrate'])
+  st.line_chart(df8['Week'])
 elif option == '9':
   st.write(df9)
   st.line_chart(df9['Nitrite'])
   st.line_chart(df9['Nitrate'])
+  st.line_chart(df9['Week'])
 elif option == '10':
   st.write(df10)
   st.line_chart(df10['Nitrite'])
   st.line_chart(df10['Nitrate'])
+  st.line_chart(df10['Week'])
 
