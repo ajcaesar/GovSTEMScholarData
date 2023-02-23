@@ -41,16 +41,17 @@ while i < 10:
   df9.at[i, "Water Added"] = df.iloc[8, 4*i + 5]
   df10.at[i, "Water Added"] = df.iloc[9, 4*i + 5]
   #add in nitrite data 
-  df1.at[i, "Nitrite"] = (df.iloc[0, 4*i + 4])[0:(df.iloc[0, 4*i + 4].index('/'))]
-  df2.at[i, "Nitrite"] = df.iloc[1, 4*i + 4][0:(df.iloc[1, 4*i + 4].index('/'))]
-  df3.at[i, "Nitrite"] = df.iloc[2, 4*i + 4][0:(df.iloc[2, 4*i + 4].index('/'))]
-  df4.at[i, "Nitrite"] = df.iloc[3, 4*i + 4][:df.iloc[3, 4*i + 4].index('/')]
-  df5.at[i, "Nitrite"] = df.iloc[4, 4*i + 4][:df.iloc[4, 4*i + 4].index('/')]
-  df6.at[i, "Nitrite"] = df.iloc[5, 4*i + 4][:df.iloc[5, 4*i + 4].index('/')]
-  df7.at[i, "Nitrite"] = df.iloc[6, 4*i + 4][:df.iloc[6, 4*i + 4].index('/')]
-  df8.at[i, "Nitrite"] = df.iloc[7, 4*i + 4][:df.iloc[7, 4*i + 4].index('/')]
-  df9.at[i, "Nitrite"] = df.iloc[8, 4*i + 4][:df.iloc[8, 4*i + 4].index('/')]
-  df10.at[i, "Nitrite"] = df.iloc[9, 4*i + 4][:df.iloc[9, 4*i + 4].index('/')]
+  
+  df1.at[i, "Nitrite"] = (df.iloc[0,4*i+4]).split('/')[0]
+  df2.at[i, "Nitrite"] = (df.iloc[1,4*i+4]).split('/')[0]
+  df3.at[i, "Nitrite"] = (df.iloc[2,4*i+4]).split('/')[0]
+  df4.at[i, "Nitrite"] = (df.iloc[3,4*i+4]).split('/')[0]
+  df5.at[i, "Nitrite"] = (df.iloc[4,4*i+4]).split('/')[0]
+  df6.at[i, "Nitrite"] = (df.iloc[5,4*i+4]).split('/')[0]
+  df7.at[i, "Nitrite"] = (df.iloc[6,4*i+4]).split('/')[0]
+  df8.at[i, "Nitrite"] = (df.iloc[7,4*i+4]).split('/')[0]
+  df9.at[i, "Nitrite"] = (df.iloc[8,4*i+4]).split('/')[0]
+  df10.at[i, "Nitrite"] = (df.iloc[9,4*i+4]).split('/')[0]
   #add in Week data 
   df9.at[i, "Week"] = i + 1
   df1.at[i, "Week"] = i + 1
