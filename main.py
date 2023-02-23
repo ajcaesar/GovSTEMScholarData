@@ -18,16 +18,16 @@ st.write(df)
 i = 0; 
 while i < 10:
   #add in pH data 
-  df1.at[i, "pH"] = df.iloc[0, 4*i + 3]
-  df2.at[i, "pH"] = df.iloc[1, 4*i + 3]
-  df3.at[i, "pH"] = df.iloc[2, 4*i + 3]
-  df4.at[i, "pH"] = df.iloc[3, 4*i + 3]
-  df5.at[i, "pH"] = df.iloc[4, 4*i + 3]
-  df6.at[i, "pH"] = df.iloc[5, 4*i + 3]
-  df7.at[i, "pH"] = df.iloc[6, 4*i + 3]
-  df8.at[i, "pH"] = df.iloc[7, 4*i + 3]
-  df9.at[i, "pH"] = df.iloc[8, 4*i + 3]
-  df10.at[i, "pH"] = df.iloc[9, 4*i + 3]
+  df1.at[i, "pH"] = float(df.iloc[0, 4*i + 3])
+  df2.at[i, "pH"] = float(df.iloc[1, 4*i + 3])
+  df3.at[i, "pH"] = float(df.iloc[2, 4*i + 3])
+  df4.at[i, "pH"] = float(df.iloc[3, 4*i + 3])
+  df5.at[i, "pH"] = float(df.iloc[4, 4*i + 3])
+  df6.at[i, "pH"] = float(df.iloc[5, 4*i + 3])
+  df7.at[i, "pH"] = float(df.iloc[6, 4*i + 3])
+  df8.at[i, "pH"] = float(df.iloc[7, 4*i + 3])
+  df9.at[i, "pH"] = float(df.iloc[8, 4*i + 3])
+  df10.at[i, "pH"] = float(df.iloc[9, 4*i + 3])
   #add in water added data 
   df1.at[i, "Water Added"] = df.iloc[0, 4*i + 5]
   df2.at[i, "Water Added"] = df.iloc[1, 4*i + 5]
@@ -96,49 +96,59 @@ if option == '1':
   st.line_chart(df1['Nitrite'])
   st.line_chart(df1['Nitrate'])
   st.line_chart(df1['Week'])
+  st.line_chart(df1['pH'])
 elif option == '2':
   st.write(df2)
   st.line_chart(df2['Nitrite'])
   st.line_chart(df2['Nitrate'])
   st.line_chart(df2['Week'])
+  st.line_chart(df2['pH'])
 elif option == '3':
   st.write(df3)
   st.line_chart(df3['Nitrite'])
   st.line_chart(df3['Nitrate'])
   st.line_chart(df3['Week'])
+  st.line_chart(df3['pH'])
 elif option == '4':
   st.write(df4)
   st.line_chart(df4['Nitrite'])
   st.line_chart(df4['Nitrate'])
   st.line_chart(df4['Week'])
+  st.line_chart(df4['pH'])
 elif option == '5':
   st.write(df5)
   st.line_chart(df5['Nitrite'])
   st.line_chart(df5['Nitrate'])
   st.line_chart(df5['Week'])
+  st.line_chart(df5['pH'])
 elif option == '6':
   st.write(df6)
   st.line_chart(df6['Nitrite'])
   st.line_chart(df6['Nitrate'])
   st.line_chart(df6['Week'])
+  st.line_chart(df6['pH'])
 elif option == '7':
   st.write(df7)
   st.line_chart(df7['Nitrite'])
   st.line_chart(df7['Nitrate'])
   st.line_chart(df7['Week'])
+  st.line_chart(df7['pH'])
 elif option == '8':
   st.write(df8)
   st.line_chart(df8['Nitrite'])
   st.line_chart(df8['Nitrate'])
   st.line_chart(df8['Week'])
+  st.line_chart(df8['pH'])
 elif option == '9':
   st.write(df9)
   st.line_chart(df9['Nitrite'])
   st.line_chart(df9['Nitrate'])
   st.line_chart(df9['Week'])
+  st.line_chart(df9['pH'])
 elif option == '10':
   st.write(df10)
   st.line_chart(df10['Nitrite'])
   st.line_chart(df10['Nitrate'])
   st.line_chart(df10['Week'])
+  st.line_chart(df10['pH'])
 
