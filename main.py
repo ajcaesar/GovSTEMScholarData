@@ -100,10 +100,10 @@ while i < 10:
     df4.at[i, "Water Added"] = float(o.split(' ')[0])
   elif ("m" in o):
     df4.at[i, "Water Added"] = float(o.split('m')[0])
-  if (" " in p):
-    df5.at[i, "Water Added"] = float(p.split(' ')[0])
-  elif ("m" in p):
-    df5.at[i, "Water Added"] = float(p.split('m')[0])
+#  if (" " in p):
+#    df5.at[i, "Water Added"] = float(p.split(' ')[0])
+#  elif ("m" in p):
+#    df5.at[i, "Water Added"] = float(p.split('m')[0])
   if (" " in q):
     df6.at[i, "Water Added"] = float(q.split(' ')[0])
   elif ("m" in q):
