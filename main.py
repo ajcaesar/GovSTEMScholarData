@@ -26,7 +26,16 @@ while i < 10:
   df6.at[i, "pH"] = df.iloc[6, 4*i + 3]
   df7.at[i, "pH"] = df.iloc[7, 4*i + 3]
   df8.at[i, "pH"] = df.iloc[8, 4*i + 3]
-  df9.at[i, "pH"] = df.iloc[9, 4*i + 3]
+  df9.at[i, "Week"] = i + 1
+  df1.at[i, "Week"] = i + 1
+  df2.at[i, "Week"] = i + 1
+  df3.at[i, "Week"] = i + 1
+  df4.at[i, "Week"] = i + 1
+  df5.at[i, "Week"] = i + 1
+  df6.at[i, "Week"] = i + 1
+  df7.at[i, "Week"] = i + 1
+  df8.at[i, "Week"] = i + 1
+  df9.at[i, "Week"] = i + 1
   i += 1
   
 st.write(df1)
