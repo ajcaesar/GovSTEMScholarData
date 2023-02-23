@@ -70,6 +70,10 @@ while i < 10:
     df7.at[i, "Nitrate"] = g.split('/')[1]
     df8.at[i, "Nitrate"] = h.split('/')[1]
     df9.at[i, "Nitrate"] = ij.split('/')[1]
+    if (i != 7)
+      df10.at[i, "Nitrite"] = k.split('/')[0]
+      df10.at[i, "Nitrate"] = k.split('/')[1]
+      
   #add in Week data 
   df9.at[i, "Week"] = i + 1
   df1.at[i, "Week"] = i + 1
