@@ -53,15 +53,16 @@ while i < 10:
   st.write(i)
   st.write(a)
   st.write(type(a))
-  df1.at[i, "Nitrite"] = a.split('/')[0]
-  df2.at[i, "Nitrite"] = b.split('/')[0]
-  df3.at[i, "Nitrite"] = c.split('/')[0]
-  df4.at[i, "Nitrite"] = d.split('/')[0]
-  df5.at[i, "Nitrite"] = e.split('/')[0]
-  df6.at[i, "Nitrite"] = f.split('/')[0]
-  df7.at[i, "Nitrite"] = g.split('/')[0]
-  df8.at[i, "Nitrite"] = h.split('/')[0]
-  df9.at[i, "Nitrite"] = ij.split('/')[0]
+  if (i%2 == 1):
+    df1.at[i, "Nitrite"] = a.split('/')[0]
+    df2.at[i, "Nitrite"] = b.split('/')[0]
+    df3.at[i, "Nitrite"] = c.split('/')[0]
+    df4.at[i, "Nitrite"] = d.split('/')[0]
+    df5.at[i, "Nitrite"] = e.split('/')[0]
+    df6.at[i, "Nitrite"] = f.split('/')[0]
+    df7.at[i, "Nitrite"] = g.split('/')[0]
+    df8.at[i, "Nitrite"] = h.split('/')[0]
+    df9.at[i, "Nitrite"] = ij.split('/')[0]
   #add in Week data 
   df9.at[i, "Week"] = i + 1
   df1.at[i, "Week"] = i + 1
