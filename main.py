@@ -97,8 +97,9 @@ while i < 10:
   if ("m" in o):
     df4.at[i, "Water Added"] = float(o.split('m')[0])
   st.write(p)
-  if ("m" in p):
-    df5.at[i, "Water Added"] = float(p.split('m')[0])
+  if (p != 'nan'):
+    if ("m" in p):
+      df5.at[i, "Water Added"] = float(p.split('m')[0])
 
   if ("m" in q):
     df6.at[i, "Water Added"] = float(q.split('m')[0])
