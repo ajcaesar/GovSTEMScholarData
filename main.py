@@ -237,8 +237,8 @@ elif option == 'Nitrite':
   st.line_chart(df9['Nitrite'])
   st.line_chart(df10['Nitrite'])
 elif option == 'Nitrate':
-  st.line_chart(df1['Nitrate'])
-  st.line_chart(df2['Nitrate'])
+  st.line_chart(df1['Nitrate'], df3['Nitrate'], df5['Nitrate'], df7['Nitrate'], df9['Nitrate'])
+  st.line_chart(df2['Nitrate'], df4['Nitrate'], df6['Nitrate'], df8['Nitrate'], df10['Nitrate'],)
   st.line_chart(df3['Nitrate'])
   st.line_chart(df4['Nitrate'])
   st.line_chart(df5['Nitrate'])
