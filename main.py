@@ -213,7 +213,7 @@ elif option == '10':
   st.line_chart(df10['Nitrite'])
   st.line_chart(df10['Nitrate'])
   st.line_chart(df10['pH'])
-  st.line_chart(df10['Water Added'])'
+  st.line_chart(df10['Water Added'])
 elif option == 'pH':
   st.line_chart(df1['pH'])
   st.line_chart(df2['pH'])
