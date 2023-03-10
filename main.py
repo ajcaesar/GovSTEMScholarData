@@ -152,7 +152,7 @@ while i < 10:
 
 option = st.selectbox(
      'Pick your container',
-     ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10'))
+     ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'pH', 'Nitrite', 'Nitrate'))
 
 if option == '1':
   st.write(df1)
