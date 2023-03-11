@@ -265,7 +265,7 @@ elif option == '10':
   st.line_chart(df10['pH'])
   st.line_chart(df10['Water Added'])
 elif option == 'pH':
-  st.line_chart(dfpH, 'Time (Weeks)', 'pH')
+  st.line_chart(dfpH)
   st.line_chart(df1['pH'])
   st.line_chart(df2['pH'])
   st.line_chart(df3['pH'])
@@ -277,7 +277,7 @@ elif option == 'pH':
   st.line_chart(df9['pH'])
   st.line_chart(df10['pH'])
 elif option == 'Nitrite':
-  st.line_chart(dfNitrite, 'Time (Weeks)', 'Nitrite Level')
+  st.line_chart(dfNitrite)
   st.line_chart(df1['Nitrite'])
   st.line_chart(df2['Nitrite'])
   st.line_chart(df3['Nitrite'])
@@ -289,7 +289,7 @@ elif option == 'Nitrite':
   st.line_chart(df9['Nitrite'])
   st.line_chart(df10['Nitrite'])
 elif option == 'Nitrate':
-  st.line_chart(dfNitrate, x ='Time (Weeks)', y = 'Nitrate Level')
+  st.line_chart(dfNitrate)
   st.line_chart(df1['Nitrate'])
   st.line_chart(df2['Nitrate'])
   st.line_chart(df3['Nitrate'])
