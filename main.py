@@ -289,7 +289,7 @@ elif option == 'Nitrite':
   st.line_chart(df9['Nitrite'])
   st.line_chart(df10['Nitrite'])
 elif option == 'Nitrate':
-  st.line_chart(dfNitrate, 'Time (Weeks)', 'Nitrate Level')
+  st.line_chart(dfNitrate, x ='Time (Weeks)', y = 'Nitrate Level')
   st.line_chart(df1['Nitrate'])
   st.line_chart(df2['Nitrate'])
   st.line_chart(df3['Nitrate'])
