@@ -149,6 +149,23 @@ while i < 10:
   df9.at[i, "Week"] = int(i + 1)
   df10.at[i, "Week"] = int(i + 1)
   i += 1
+  
+ #combine nitrate onto one graph 
+dfNitrate = pandas.DataFrame({
+'Container number': [f"{d} Days" for d in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]],
+        'Can 1': df1["Nitrate"],
+        'Can 2': df2["Nitrate"],
+        'Can 3': df3["Nitrate"],
+        'Can 4': df4["Nitrate"],
+        'Can 5': df5["Nitrate"],
+        'Can 6': df6["Nitrate"],
+        'Can 7': df7["Nitrate"],
+        'Can 8': df8["Nitrate"],
+        'Can 9': df9["Nitrate"],
+        'Can 10': df10["Nitrate"],
+},
+  columns=['Can 1', 'Can 2', 'Can 3', 'Can 4', 'Can 5', 'Can 6', 'Can 7', 'Can 8', 'Can 9', 'Can 10']
+)
 
 option = st.selectbox(
      'Pick your container/statistic',
@@ -237,8 +254,7 @@ elif option == 'Nitrite':
   st.line_chart(df9['Nitrite'])
   st.line_chart(df10['Nitrite'])
 elif option == 'Nitrate':
-  st.line_chart(df1['Nitrate'], df3['Nitrate'], df5['Nitrate'], df7['Nitrate'], df9['Nitrate'])
-  st.line_chart(df2['Nitrate'], df4['Nitrate'], df6['Nitrate'], df8['Nitrate'], df10['Nitrate'],)
+  st.line_chart(dfNitrate)
   st.line_chart(df3['Nitrate'])
   st.line_chart(df4['Nitrate'])
   st.line_chart(df5['Nitrate'])
