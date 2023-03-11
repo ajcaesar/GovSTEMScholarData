@@ -3,6 +3,7 @@ import pandas as pd
 import streamlit as st
 from io import StringIO
 
+st.title('The Effect of Microplastic Presence on Organic Matter Decomposition')
 df = pd.read_csv("Data Spreadsheet - Sheet1.csv")
 df1 = pd.DataFrame(columns = ["Week", "pH", "Nitrite", "Nitrate", "Water Added"])
 df2 = pd.DataFrame(columns = ["Week", "pH", "Nitrite", "Nitrate", "Water Added"])
