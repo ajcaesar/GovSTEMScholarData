@@ -183,6 +183,22 @@ dfNitrite = pd.DataFrame({
   columns=['Can 1', 'Can 2', 'Can 3', 'Can 4', 'Can 5', 'Can 6', 'Can 7', 'Can 8', 'Can 9', 'Can 10']
 )
 
+dfpH = pd.DataFrame({
+'Container number': [f"{d} Days" for d in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]],
+        'Can 1': df1["pH"],
+        'Can 2': df2["pH"],
+        'Can 3': df3["pH"],
+        'Can 4': df4["pH"],
+        'Can 5': df5["pH"],
+        'Can 6': df6["pH"],
+        'Can 7': df7["pH"],
+        'Can 8': df8["pH"],
+        'Can 9': df9["pH"],
+        'Can 10': df10["pH"],
+},
+  columns=['Can 1', 'Can 2', 'Can 3', 'Can 4', 'Can 5', 'Can 6', 'Can 7', 'Can 8', 'Can 9', 'Can 10']
+)
+
 option = st.selectbox(
      'Pick your container/statistic',
      ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'pH', 'Nitrite', 'Nitrate'))
@@ -248,6 +264,7 @@ elif option == '10':
   st.line_chart(df10['pH'])
   st.line_chart(df10['Water Added'])
 elif option == 'pH':
+  st.line_chart(dfpH)
   st.line_chart(df1['pH'])
   st.line_chart(df2['pH'])
   st.line_chart(df3['pH'])
