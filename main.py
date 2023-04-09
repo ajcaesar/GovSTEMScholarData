@@ -160,7 +160,7 @@ dfNitrate = pd.DataFrame({
         'Can 4': df8["Nitrate"],
         'Can 5': df10["Nitrate"],
 },
-  columns=['Can 1', 'Can 2', 'Can 3', 'Can 4', 'Can 5']
+  columns=['Can 1 (Og)', 'Can 2 (3g)', 'Can 3 (6g)', 'Can 4 (12g)', 'Can 5 (18g)']
 )
 
 dfNitrite = pd.DataFrame({
@@ -171,7 +171,7 @@ dfNitrite = pd.DataFrame({
         'Can 4': df8["Nitrite"],
         'Can 5': df10["Nitrite"],
 },
-  columns=['Can 1', 'Can 2', 'Can 3', 'Can 4', 'Can 5']
+  columns=['Can 1 (Og)', 'Can 2 (3g)', 'Can 3 (6g)', 'Can 4 (12g)', 'Can 5 (18g)']
 )
 
 dfpH = pd.DataFrame({
@@ -182,7 +182,7 @@ dfpH = pd.DataFrame({
         'Can 4': df8["pH"],
         'Can 5': df10["pH"],
 },
-  columns=['Can 1', 'Can 2', 'Can 3', 'Can 4', 'Can 5']
+  columns=['Can 1 (Og)', 'Can 2 (3g)', 'Can 3 (6g)', 'Can 4 (12g)', 'Can 5 (18g)']
 )
 
 option = st.selectbox(
@@ -250,7 +250,7 @@ elif option == '10':
   st.line_chart(df10['pH'])
   st.line_chart(df10['Water Added'])
 elif option == 'pH':
-  st.line_chart(dfpH)
+  st.line_chart(dfpH, x = 'Can #', y = 'pH')
   st.line_chart(df1['pH'])
   st.line_chart(df2['pH'])
   st.line_chart(df3['pH'])
@@ -262,7 +262,7 @@ elif option == 'pH':
   st.line_chart(df9['pH'])
   st.line_chart(df10['pH'])
 elif option == 'Nitrite':
-  st.line_chart(dfNitrite)
+  st.line_chart(dfNitrite, x = 'Can #', y = "Nitrite (in ppm)")
   st.line_chart(df1['Nitrite'])
   st.line_chart(df2['Nitrite'])
   st.line_chart(df3['Nitrite'])
@@ -274,7 +274,7 @@ elif option == 'Nitrite':
   st.line_chart(df9['Nitrite'])
   st.line_chart(df10['Nitrite'])
 elif option == 'Nitrate':
-  st.line_chart(dfNitrate)
+  st.line_chart(dfNitrate, x = 'Can #', y='Nitrate (in ppm)')
   st.line_chart(df1['Nitrate'])
   st.line_chart(df2['Nitrate'])
   st.line_chart(df3['Nitrate'])
