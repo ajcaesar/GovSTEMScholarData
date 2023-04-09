@@ -169,33 +169,23 @@ dfNitrate = pd.DataFrame({
 )
 
 dfNitrite = pd.DataFrame({
-'Container number': [f"{d} Days" for d in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]],
-        'Can 1': df1["Nitrite"],
-        'Can 2': df2["Nitrite"],
-        'Can 3': df3["Nitrite"],
-        'Can 4': df4["Nitrite"],
-        'Can 5': df5["Nitrite"],
-        'Can 6': df6["Nitrite"],
-        'Can 7': df7["Nitrite"],
-        'Can 8': df8["Nitrite"],
-        'Can 9': df9["Nitrite"],
-        'Can 10': df10["Nitrite"],
+'Container number': [f"{d} Days" for d in [1, 2, 3, 4, 5]],
+        'Can 1': df2["Nitrite"],
+        'Can 2': df4["Nitrite"],
+        'Can 3': df6["Nitrite"],
+        'Can 4': df8["Nitrite"],
+        'Can 5': df10["Nitrite"],
 },
   columns=['Can 1', 'Can 2', 'Can 3', 'Can 4', 'Can 5', 'Can 6', 'Can 7', 'Can 8', 'Can 9', 'Can 10']
 )
 
 dfpH = pd.DataFrame({
-'Container number': [f"{d} Days" for d in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]],
-        'Can 1': df1["pH"],
-        'Can 2': df2["pH"],
-        'Can 3': df3["pH"],
-        'Can 4': df4["pH"],
-        'Can 5': df5["pH"],
-        'Can 6': df6["pH"],
-        'Can 7': df7["pH"],
-        'Can 8': df8["pH"],
-        'Can 9': df9["pH"],
-        'Can 10': df10["pH"],
+'Container number': [f"{d} Days" for d in [1, 2, 3, 4, 5]],
+        'Can 1': df2["pH"],
+        'Can 2': df4["pH"],
+        'Can 3': df6["pH"],
+        'Can 4': df8["pH"],
+        'Can 5': df10["pH"],
 },
   columns=['Can 1', 'Can 2', 'Can 3', 'Can 4', 'Can 5', 'Can 6', 'Can 7', 'Can 8', 'Can 9', 'Can 10']
 )
