@@ -154,16 +154,11 @@ while i < 10:
  #combine nitrate onto one graph 
 dfNitrate = pd.DataFrame({
 'Container number': [f"{d} Days" for d in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]],
-        'Can 1': df1["Nitrate"],
-        'Can 2': df2["Nitrate"],
-        'Can 3': df3["Nitrate"],
-        'Can 4': df4["Nitrate"],
-        'Can 5': df5["Nitrate"],
-        'Can 6': df6["Nitrate"],
-        'Can 7': df7["Nitrate"],
-        'Can 8': df8["Nitrate"],
-        'Can 9': df9["Nitrate"],
-        'Can 10': df10["Nitrate"],
+        'Can 1': df2["Nitrate"],
+        'Can 2': df4["Nitrate"],
+        'Can 3': df6["Nitrate"],
+        'Can 4': df8["Nitrate"],
+        'Can 5': df10["Nitrate"],
 },
   columns=['Can 1', 'Can 2', 'Can 3', 'Can 4', 'Can 5', 'Can 6', 'Can 7', 'Can 8', 'Can 9', 'Can 10']
 )
