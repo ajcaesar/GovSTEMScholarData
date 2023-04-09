@@ -153,14 +153,14 @@ while i < 10:
   
  #combine nitrate onto one graph 
 dfNitrate = pd.DataFrame({
-'Container number': [f"{d} Days" for d in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]],
+'Container number': [f"{d} Days" for d in [1, 2, 3, 4, 5]],
         'Can 1': df2["Nitrate"],
         'Can 2': df4["Nitrate"],
         'Can 3': df6["Nitrate"],
         'Can 4': df8["Nitrate"],
         'Can 5': df10["Nitrate"],
 },
-  columns=['Can 1', 'Can 2', 'Can 3', 'Can 4', 'Can 5', 'Can 6', 'Can 7', 'Can 8', 'Can 9', 'Can 10']
+  columns=['Can 1', 'Can 2', 'Can 3', 'Can 4', 'Can 5']
 )
 
 dfNitrite = pd.DataFrame({
@@ -171,7 +171,7 @@ dfNitrite = pd.DataFrame({
         'Can 4': df8["Nitrite"],
         'Can 5': df10["Nitrite"],
 },
-  columns=['Can 1', 'Can 2', 'Can 3', 'Can 4', 'Can 5', 'Can 6', 'Can 7', 'Can 8', 'Can 9', 'Can 10']
+  columns=['Can 1', 'Can 2', 'Can 3', 'Can 4', 'Can 5']
 )
 
 dfpH = pd.DataFrame({
@@ -182,7 +182,7 @@ dfpH = pd.DataFrame({
         'Can 4': df8["pH"],
         'Can 5': df10["pH"],
 },
-  columns=['Can 1', 'Can 2', 'Can 3', 'Can 4', 'Can 5', 'Can 6', 'Can 7', 'Can 8', 'Can 9', 'Can 10']
+  columns=['Can 1', 'Can 2', 'Can 3', 'Can 4', 'Can 5']
 )
 
 option = st.selectbox(
