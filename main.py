@@ -262,7 +262,7 @@ elif option == 'pH':
   st.line_chart(df9['pH'])
   st.line_chart(df10['pH'])
 elif option == 'Nitrite':
-  st.line_chart(dfNitrite, x = 'Can #', y = "Nitrite (in ppm)")
+  st.line_chart(dfNitrite, 'Can #', "Nitrite (in ppm)")
   st.line_chart(df1['Nitrite'])
   st.line_chart(df2['Nitrite'])
   st.line_chart(df3['Nitrite'])
