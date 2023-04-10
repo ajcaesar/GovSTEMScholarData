@@ -277,7 +277,7 @@ elif option == 'Nitrite':
 elif option == 'Nitrate':
   x = (alt.Chart(dfNitrate)
   .mark_line()
-  .encode(x='Can #', y='Nitrate (in ppm)', color=alt.Color('wday'))
+  .encode(x='Can #', y='Nitrate (in ppm)')
   .interactive())
   st.altair_chart(x)
   st.line_chart(df1['Nitrate'])
