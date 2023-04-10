@@ -279,7 +279,7 @@ elif option == 'Nitrate':
   .mark_line()
   .encode(x='Can #', y='Nitrate (in ppm)', color=alt.Color('wday'))
   .interactive())
-  st.altairchart(x)
+  st.altair_chart(x)
   st.line_chart(df1['Nitrate'])
   st.line_chart(df2['Nitrate'])
   st.line_chart(df3['Nitrate'])
