@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
+import altair as alt
 from io import StringIO
 
 st.title('The Effect of Microplastic Presence on Organic Matter Decomposition')
