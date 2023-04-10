@@ -275,12 +275,7 @@ elif option == 'Nitrite':
   st.line_chart(df9['Nitrite'])
   st.line_chart(df10['Nitrite'])
 elif option == 'Nitrate':
-  x = (alt.Chart(dfNitrate)
-  .mark_line()
-  .encode(x='Can #', y='Nitrate (in ppm)')
-  .properties(width=600, height=250)
-  .interactive())
-  st.altair_chart(x)
+  st.altair_chart(alt.Chart(dfNitrate).mark_line().encode(x='Can #', y='Nitrate (in ppm)'))
   st.line_chart(df1['Nitrate'])
   st.line_chart(df2['Nitrate'])
   st.line_chart(df3['Nitrate'])
